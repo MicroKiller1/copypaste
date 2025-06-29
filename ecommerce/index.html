@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Professional Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to the Best Online Store</h2>
+            <p>Find everything you need at amazing prices</p>
+        </section>
+        <section class="controls">
+            <input type="text" id="search" placeholder="Search products..." />
+        </section>
+        <section id="products" class="products">
+            <!-- Products injected by JavaScript -->
+        </section>
+        <section id="cart" class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p class="total">Total: $<span id="cart-total">0.00</span></p>
+            <button id="clear-cart">Clear Cart</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Professional Shop</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
